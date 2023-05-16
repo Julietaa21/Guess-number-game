@@ -46,10 +46,10 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
-const tryAgain = document.querySelector(".btn again");
+const tryAgain = document.querySelector(".again");
 
 tryAgain.addEventListener("click", function () {
-  if (onclick) {
-    document.querySelector(".message").textContent = "Start guessing...";
-  }
+  document.querySelector(".message").textContent = "Start guessing...";
+  document.querySelector(".score").textContent = " 20";
+  document.querySelector(".highscore").textContent = " 0";
 });
